@@ -88,7 +88,7 @@ function FormularioCategoria() {
             type="text"
             placeholder="nome"
             name='nome'
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-sky-400 rounded p-3"
             value={categoria.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
@@ -96,13 +96,13 @@ function FormularioCategoria() {
             type="text"
             placeholder="Descrição"
             name='descricao'
-            className="border-2 border-slate-700 rounded p-2"
+            className="border-2 border-sky-400 rounded p-3"
             value={categoria.descricao}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
         </div>
         <button
-          className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
+          className="rounded text-slate-100 bg-green-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
           type="submit"
         >
           {id === undefined ? 'Cadastrar' : 'Editar'}
