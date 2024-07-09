@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Categoria from '../../../models/Categoria';
 import { buscar } from '../../../services/Services';
 import CardCategoria from '../cardCategoria/CardCategoria';
+import './ListaCategorias.css';
 //import { toastAlerta } from '../../../util/toastAlerta';
 
 
@@ -27,7 +28,7 @@ function ListaCategorias() {
     buscarCategorias();
   }, [categorias.length]);
   return (
-    <>
+    <div className="background">
       {categorias.length === 0 && (
         <DNA
           visible={true}
@@ -58,7 +59,7 @@ function ListaCategorias() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -2,6 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Categoria from '../../../models/Categoria';
 import { atualizar, buscar, cadastrar } from '../../../services/Services';
+//import './FormularioCategorias.css';
 //import { toastAlerta } from '../../../util/toastAlerta';
 
 
@@ -75,7 +76,7 @@ function FormularioCategoria() {
   }
 
   return (
-    <div className="container flex flex-col items-center justify-center mx-auto">
+    <div className="background">
       <h1 className="text-4xl text-center my-8">
 
         {id === undefined ? 'Cadastre uma nova categoria' : 'Editar cagoria'}
@@ -88,7 +89,7 @@ function FormularioCategoria() {
             type="text"
             placeholder="nome"
             name='nome'
-            className="border-2 border-sky-400 rounded p-3"
+            className="border-2 border-[#005BBE] rounded p-3"
             value={categoria.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
@@ -96,13 +97,13 @@ function FormularioCategoria() {
             type="text"
             placeholder="Descrição"
             name='descricao'
-            className="border-2 border-sky-400 rounded p-3"
+            className="border-2 border-[#005BBE] rounded p-3"
             value={categoria.descricao}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
         </div>
         <button
-          className="rounded text-slate-100 bg-green-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
+          className="rounded text-slate-100 bg-green-400 hover:bg-[#005BBE] w-1/2 py-2 mx-auto block"
           type="submit"
         >
           {id === undefined ? 'Cadastrar' : 'Editar'}

@@ -7,14 +7,14 @@ function Footer() {
 
   return (
     <>
-        <div className="flex justify-center bg-sky-400 text-white">
-          <div className="container flex flex-col items-center py-4">
-            <p className='text-xl font-bold'>Farmácia do Lucas Ltda | Copyright: 2024 </p>
+        <div className="flex justify-center bg-[#005BBE] text-white">
+          <div className="container flex flex-col items-center py-5">
+            <p className='text-xl font-bold'>Farmácia | Copyright: Lucas Ltda - 2024 </p>
             <p className='text-lg'>Acesse nossas redes sociais</p>
-            <div className='flex gap-2'>
-              <LinkedinLogo size={48} weight='bold' />
-              <InstagramLogo size={48} weight='bold' />
-              <FacebookLogo size={48} weight='bold' />
+            <div className='flex gap-4'>
+              <LinkedinLogo size={45} weight='bold' />
+              <InstagramLogo size={45} weight='bold' />
+              <FacebookLogo size={45} weight='bold' />
             </div>
           </div>
         </div>
