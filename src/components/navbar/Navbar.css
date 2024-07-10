@@ -1,14 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    font-family: "Montserrat", sans-serif;
-}
-.color-navbar{
-    background-color: #D4A373;
-    top: 0;
-    position: sticky;
-    z-index: 1;
-    color:white;
-    font-family: "Montserrat", sans-serif;
-
-}
+.navbar-container {
+    background: linear-gradient(135deg, #32CD32 0%, #2E8B57 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .navbar-container:hover {
+    background: linear-gradient(135deg, #2E8B57 0%, #32CD32 100%);
+  }
+  
+  .nav-link {
+    transition: transform 0.2s, color 0.3s;
+    color: white;
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-2px);
+    color: #FFD700; /* Dourado para destacar */
+  }
+  
+  .nav-link:active {
+    transform: translateY(0);
+    color: #FFFFE0; /* Cor clara para um efeito de clique */
+  }
+  
+  /* Adicionando um sublinhado suave aos links */
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFD700;
+    transition: width 0.3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .color-navbar {
+    background: linear-gradient(135deg, #005BBE 0%, #2E8B57 100%);
+  }

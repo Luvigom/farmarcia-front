@@ -1,0 +1,26 @@
+.footer-container {
+    background: linear-gradient(135deg, #005BBE 0%, #2E8B57 100%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-container p {
+    margin: 2px 0;
+  }
+  
+  .social-icons {
+    margin-top: 5px;
+  }
+  
+  .social-icons svg {
+    transition: transform 0.2s, color 0.3s;
+  }
+  
+  .social-icons svg:hover {
+    transform: translateY(-2px);
+    color: #FFD700;  
+  }
